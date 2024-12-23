@@ -104,7 +104,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Adrian Moreno Peña";
 				TargetAttributes = {
 					78A6BBCA1ADCB5EE00554D13 = {

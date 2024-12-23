@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSLog("MenuTranslate: starting")
-        self.statusItem = NSStatusBar.system.statusItem(withLength: 32)
+        self.statusItem = NSStatusBar.system.statusItem(withLength: 20)
         
         let image = NSImage(named: "TranslateStatusBarButtonImage")
         image?.isTemplate = true
