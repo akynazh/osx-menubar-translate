@@ -1,49 +1,31 @@
-# README #
+# TODO
+
+1. a app name
+2. a repo name
+2. readme
+
+# osx-menubar-translate
+
+A DIY version for [osx-menubar-translate](https://github.com/zetxek/osx-menubar-translate).
 
 MenuBar Translate is a very simple app that lets you have a quick shortcut to Google Translate in your OS X menu bar and integrate it with the OS X "Services" menu. Its main purpose is to allow you to have Google Translate by hand at all times, without needing to open a new browser window.
 
-One click, and you're ready to translate.
-
-![](Docs/service-demo.gif)
-
-You can open the application from your menubar, as well as from OS X contextual service ("Services > Translate in MenuTranslate"):
-
-![2024-11-19 21 32 57](https://github.com/user-attachments/assets/433a4b0c-2f0d-4782-926c-1f7b8c5ace09)
-
-The app has no tracking at all (well, except the one that Google will do on the Translate instance loaded in the embedded WebView - but nothing by me). Code-wise it might also serve you as a blueprint to implement a embedded webview, with a service to receive text from other contexts.
+You can open the application from your menubar, as well as from OS X contextual service ("Services > Translate in MenuTranslate"). Additionally, you can add a keyboard shortcuts for this service at "Settings > Keyboard > Keyboard Shortcuts > Services > Translate in MenuTranslate" to quickly translate selected text.
 
 ## Supported key shortcuts
 
+- `cmd + e` to **activate app**
 - `cmd + a` to **select all**
 - `cmd + c` to **copy**
 - `cmd + v` to **paste**
-
-## Download
-
-Get the last binary in [the releases section](https://github.com/zetxek/osx-menubar-translate/releases).
-Unzip the file, and drag&drop to the Applications folder. Ready!
-
-## Contributing
-
-The project just solves a personal need I have: I am Spanish and live abroad (first in The Netherlands, now in Denmark), so often I need to translate texts or words I don't know yet.
-
-If this project is useful for you and you would like to get it improved, feel free to [create an issue](https://github.com/zetxek/osx-menubar-translate/issues), or [open a PR](https://github.com/zetxek/osx-menubar-translate/pulls) straight away. It will be more than welcome!
-
-## Screenshots
-The icon in the menu bar:
-![](Resources/closed.png)
-
-The embeded window open:
-![](Resources/open.png)
-
-The Finder service integration 
-![](Docs/service-demo.gif)
-
 
 ## License
 
 MIT License, available in [license.md](license.md).
 
-## icons
+是的，MIT 许可证非常宽松。你可以自由地使用、复制、修改、合并、发布、分发、再许可和销售使用 MIT 许可证授权的软件。唯一的要求是需要在软件的所有副本或重要部分中包含原始许可证和版权声明。这样可以确保原作者得到适当的归功。
 
-<a target="_blank" href="https://icons8.com/icon/O6PlVpHecASW/itranslate">ITranslate</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+## Thanks
+
+- Based on [osx-menubar-translate](https://github.com/zetxek/osx-menubar-translate)
+- Use icons by [icons8](https://icons8.com)
