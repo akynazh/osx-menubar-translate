@@ -1,17 +1,15 @@
 # osx-translator
 
-This project uses the code of [osx-menubar-translate](https://github.com/zetxek/osx-menubar-translate) under the MIT license.
+MenuBar Translate is a very simple app that lets you have a quick shortcut to Google Translate in your OS X menu bar and integrate it with the OS X "Services" menu.
 
-MenuBar Translate is a very simple app that lets you have a quick shortcut to Google Translate in your OS X menu bar and integrate it with the OS X "Services" menu. Its main purpose is to allow you to have Google Translate by hand at all times, without needing to open a new browser window.
+NOTE: This project uses the code of [osx-menubar-translate](https://github.com/zetxek/osx-menubar-translate) under the MIT license. I want to customize many styles and features, which may not be consistent with the author's intention, so I decided to develop on my own branch, totally. If possible, I will contribute some meaningful features to the original repository.
 
-You can open the application from your menubar, as well as from OS X contextual service ("Services > Translate in MenuTranslate"). Additionally, you can add a keyboard shortcuts for this service at "Settings > Keyboard > Keyboard Shortcuts > Services > Translate in MenuTranslate" to quickly translate selected text.
+My version provides global keyboard shortcuts, a more beautiful interface and icons. More features will be added continuously.
 
-## Supported key shortcuts
+## Global keyboard shortcuts
 
-- `cmd + e` to **activate app**
-- `cmd + a` to **select all**
-- `cmd + c` to **copy**
-- `cmd + v` to **paste**
+- activate app: `cmd + e`, configure in `Translator/Constants.swift`
+- translate selected text: any, add a keyboard shortcut for the service at "Settings > Keyboard > Keyboard Shortcuts > Services > Translate Selected Text".
 
 ## License
 
@@ -19,5 +17,5 @@ MIT License, available in [license.md](license.md).
 
 ## Thanks
 
-- Based on [osx-menubar-translate](https://github.com/zetxek/osx-menubar-translate)
-- Use icons by [icons8](https://icons8.com)
+- CODES: [osx-menubar-translate](https://github.com/zetxek/osx-menubar-translate)
+- ICONS: [icons8](https://icons8.com)
