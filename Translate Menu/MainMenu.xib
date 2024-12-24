@@ -19,7 +19,7 @@
         </customObject>
         <menu id="CJx-Hc-3bo">
             <items>
-                <menuItem title="Version 1.2.1" id="Lwn-HC-wyy">
+                <menuItem title="Version 1.3.0" id="Lwn-HC-wyy">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem title="About Translate Menu" id="OqD-PK-giP">
@@ -35,7 +35,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-110" y="-65.5"/>
+            <point key="canvasLocation" x="-110.5" y="-65.5"/>
         </menu>
     </objects>
 </document>

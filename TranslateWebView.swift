@@ -57,8 +57,7 @@ class TranslateWebView: WKWebView {
     @IBAction func paste(_ sender: Any?) {
         let pasteboard = NSPasteboard.general
         if let copiedString = pasteboard.string(forType: .string) {
-            // Use the copied string
-            print("Pasted: \(copiedString)")
+            NSLog("Pasted: \(copiedString)")
             let javascript = "document.execCommand('insertText', false, '\(copiedString)');"
             self.evaluateJavaScript(javascript, completionHandler: nil)
         }

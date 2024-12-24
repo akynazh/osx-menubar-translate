@@ -20,27 +20,27 @@
 */
 
 import Cocoa
+import KeyboardShortcuts
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     
-    var statusItem: NSStatusItem!
+    let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
     let popover = NSPopover()
     let translateViewController = TranslateViewController(nibName: "TranslateViewController", bundle: nil)
     var eventMonitor: EventMonitor?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSLog("MenuTranslate: starting")
-        self.statusItem = NSStatusBar.system.statusItem(withLength: 20)
         
-        let image = NSImage(named: "TranslateStatusBarButtonImage")
-        image?.isTemplate = true
+        KeyboardShortcuts.onKeyUp(for: .toggleApp) {
+            self.showPopover(sender: nil)
+        }
         
         if let button = statusItem.button {
-            button.image = image
+            button.image = NSImage(named:NSImage.Name("TranslateMenuImage"))
             button.action = #selector(statusItemButtonActivated(sender:))
-            
             button.sendAction(on: [ .leftMouseDown, .leftMouseUp, .rightMouseDown, .rightMouseUp ])
         }
         
@@ -106,7 +106,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func quitApp(_ sender: Any) {
         NSApplication.shared.terminate(self)
     }
-    
     
     @IBAction
     func aboutMenuActivated(sender: AnyObject?) {

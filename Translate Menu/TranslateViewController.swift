@@ -32,7 +32,8 @@ class TranslateViewController: NSViewController, WKNavigationDelegate {
     override var acceptsFirstResponder: Bool { return false }
     
     var urlLoaded = false
-    let defaultUrl = "https://translate.google.com?text="
+    let defaultUrl = "https://translate.google.com?sl=auto&tl=zh-CN&text="
+    let url="https://translate.google.com.hk/?hl=en&sl=auto&tl=zh-CN&text=yonder&op=translate"
     
     
     override func viewWillAppear() {
@@ -79,7 +80,7 @@ class TranslateViewController: NSViewController, WKNavigationDelegate {
         case [.command] where event.characters == "c",
              [.command ] where event.characters == "v",
              [.command ] where event.characters == "a":
-            print("cmd + c / v / a")
+            NSLog("cmd + c / v / a")
         default:
             break
         }

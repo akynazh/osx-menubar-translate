@@ -43,3 +43,7 @@ The Finder service integration
 ## License
 
 MIT License, available in [license.md](license.md).
+
+## icons
+
+<a target="_blank" href="https://icons8.com/icon/O6PlVpHecASW/itranslate">ITranslate</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
