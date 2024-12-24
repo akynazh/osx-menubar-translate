@@ -1,24 +1,3 @@
-/*
-* Copyright (c) 2015 Adrián Moreno Peña
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-* THE SOFTWARE.
-*/
-
 import Cocoa
 import KeyboardShortcuts
 
@@ -98,7 +77,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc func translateService(_ pasteboard: NSPasteboard, userData: String, error: AutoreleasingUnsafeMutablePointer<NSString?>) {
         let text = pasteboard.string(forType: .string)
-        NSLog("MenuTranslate: handling service invocation: " + text!)
         translateViewController.loadText(text: text!)
         self.showPopover(sender: nil, keyword: text)
     }
@@ -109,8 +87,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction
     func aboutMenuActivated(sender: AnyObject?) {
-        NSLog("MenuTranslate: opening github site")
-        NSWorkspace().open(URL(string: "https://github.com/zetxek/osx-menubar-translate")!)
+        NSWorkspace().open(URL(string: "https://github.com/akynazh/osx-translator")!)
     }
     
 }

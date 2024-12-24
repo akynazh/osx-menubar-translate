@@ -12,23 +12,23 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Translate_Menu" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Translator" customModuleProvider="target">
             <connections>
                 <outlet property="statusMenu" destination="CJx-Hc-3bo" id="ECK-aB-8Hl"/>
             </connections>
         </customObject>
         <menu id="CJx-Hc-3bo">
             <items>
-                <menuItem title="Version 1.3.0" id="Lwn-HC-wyy">
+                <menuItem title="Version 1.0.0" id="Lwn-HC-wyy">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="About Translate Menu" id="OqD-PK-giP">
+                <menuItem title="About Translator" id="OqD-PK-giP">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="aboutMenuActivatedWithSender:" target="-1" id="gIz-wT-ijM"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Quit Translate Menu" id="6XE-G3-hw7">
+                <menuItem title="Quit Translator" id="6XE-G3-hw7">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="quitApp:" target="Voe-Tx-rLC" id="ctN-IW-X9k"/>
